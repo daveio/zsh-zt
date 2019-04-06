@@ -1,7 +1,5 @@
 # `zsh-zt`
 
-Generate OATH-TOTP one-time passwords from the command line.
-
 <table>
   <thead>
     <tr>
@@ -29,31 +27,8 @@ Generate OATH-TOTP one-time passwords from the command line.
   </tbody>
 </table>
 
-## Installation
+Installs [`zt`][link-zt] and integrates it with zsh.
 
-foo 
-
-## Integration
-
-foo
-
-## Usage
-
-foo
-
-### Examples
-
-foo
-
-## Planned features
-
-foo
-
-## Known issues
-
-* foo
+### NOT YET FUNCTIONAL OR READY FOR USE!
 
 [link-zt]: https://github.com/daveio/zt
-[link-zsh-zt]: https://github.com/daveio/zsh-zt
-[link-zsh-zt-releases]: https://github.com/daveio/zsh-zt/releases
-[link-open-feature-request]: https://github.com/daveio/zsh-zt/issues/new?assignees=&labels=&template=feature_request.md&title=
