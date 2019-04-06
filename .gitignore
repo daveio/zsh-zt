@@ -1,0 +1,9 @@
+### Custom
+
+# Private notes
+LOCAL-NOTES.md
+
+# binaries and script flag files
+bin
+bin/**
+_zt-was-installed

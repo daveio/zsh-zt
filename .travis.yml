@@ -1,0 +1,17 @@
+language: shell
+addons:
+  apt:
+    packages:
+    - build-essential
+    - xz-utils
+before_install:
+- export LOCAL="$(mktemp --directory --tmpdir=${TMPDIR:/tmp} local.bin.XXXXXX)"
+- curl -L https://www.zsh.org/pub/zsh-5.7.1.tar.xz | xz -d - | tar x
+- cd zsh-5.7.1
+- ./configure --prefix=$LOCAL
+- make
+- make install
+- cd -
+- export PATH="$LOCAL/bin:$PATH"
+script: zsh -c 'set +v; echo ${ZSH_VERSION}; source zt.plugin.zsh; _zt_ci_test param'
+
